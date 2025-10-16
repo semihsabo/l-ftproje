@@ -5,38 +5,107 @@ import { usePathname } from 'next/navigation';
 // import useTranslation from '@/hooks/useTranslation';
 
 export default function Footer() {
-  // Simple translation function
+  // Multi-language translation function
   const t = (key) => {
     const translations = {
-      'footer.technologyConsulting': 'Technology Consulting',
-      'footer.investmentAdvisory': 'Investment Advisory',
-      'footer.marketAnalysis': 'Market Analysis',
-      'footer.riskManagement': 'Risk Management',
-      'footer.processOptimization': 'Process Optimization',
-      'footer.internationalTrade': 'International Trade',
-      'footer.companyName': 'SCENORIA',
-      'footer.tagline': 'Strategic Business Consulting',
-      'footer.description': 'Transforming businesses through strategic vision and innovative solutions.',
-      'footer.quickLinks': 'Quick Links',
-      'footer.services': 'Services',
-      'footer.about': 'About',
-      'footer.insights': 'Insights',
-      'footer.contact': 'Contact',
-      'footer.contactInfo': 'Contact Info',
-      'footer.email': 'Email',
-      'footer.phone': 'Phone',
-      'footer.address': 'Address',
-      'footer.copyright': '© 2024 SCENORIA. All rights reserved.',
-      'footer.privacyPolicy': 'Privacy Policy',
-      'footer.termsOfService': 'Terms of Service'
+      en: {
+        'footer.technologyConsulting': 'Technology Consulting',
+        'footer.investmentAdvisory': 'Investment Advisory',
+        'footer.marketAnalysis': 'Market Analysis',
+        'footer.riskManagement': 'Risk Management',
+        'footer.processOptimization': 'Process Optimization',
+        'footer.internationalTrade': 'International Trade',
+        'footer.companyName': 'SCENORIA',
+        'footer.tagline': 'Strategic Business Consulting',
+        'footer.description': 'Transforming businesses through strategic vision and innovative solutions.',
+        'footer.quickLinks': 'Quick Links',
+        'footer.services': 'Services',
+        'footer.company': 'Company',
+        'footer.about': 'About',
+        'footer.aboutUs': 'About Us',
+        'footer.insights': 'Insights',
+        'footer.contact': 'Contact',
+        'footer.contactInfo': 'Contact Info',
+        'footer.email': 'Email',
+        'footer.phone': 'Phone',
+        'footer.address': 'Address',
+        'footer.copyright': '© 2024 SCENORIA. All rights reserved.',
+        'footer.rightsReserved': '© 2024 SCENORIA. All rights reserved.',
+        'footer.careers': 'Careers',
+        'footer.privacyPolicy': 'Privacy Policy',
+        'footer.termsOfService': 'Terms of Service',
+        'footer.poweredBy': 'Powered by Readly',
+        'contact.emailAddress': 'info@scenoria.com',
+        'contact.phoneNumber': '+1 (555) 123-4567'
+      },
+      zh: {
+        'footer.technologyConsulting': '技术咨询',
+        'footer.investmentAdvisory': '投资咨询',
+        'footer.marketAnalysis': '市场分析',
+        'footer.riskManagement': '风险管理',
+        'footer.processOptimization': '流程优化',
+        'footer.internationalTrade': '国际贸易',
+        'footer.companyName': 'SCENORIA',
+        'footer.tagline': '战略商业咨询',
+        'footer.description': '通过战略愿景和创新解决方案转变企业。',
+        'footer.quickLinks': '快速链接',
+        'footer.services': '服务',
+        'footer.company': '公司',
+        'footer.about': '关于',
+        'footer.aboutUs': '关于我们',
+        'footer.insights': '行业洞察',
+        'footer.contact': '联系我们',
+        'footer.contactInfo': '联系信息',
+        'footer.email': '邮箱',
+        'footer.phone': '电话',
+        'footer.address': '地址',
+        'footer.copyright': '© 2024 SCENORIA. 版权所有。',
+        'footer.rightsReserved': '© 2024 SCENORIA. 版权所有。',
+        'footer.careers': '职业机会',
+        'footer.privacyPolicy': '隐私政策',
+        'footer.termsOfService': '服务条款',
+        'footer.poweredBy': '由 Readly 提供支持',
+        'contact.emailAddress': 'info@scenoria.com',
+        'contact.phoneNumber': '+1 (555) 123-4567'
+      },
+      tr: {
+        'footer.technologyConsulting': 'Teknoloji Danışmanlığı',
+        'footer.investmentAdvisory': 'Yatırım Danışmanlığı',
+        'footer.marketAnalysis': 'Pazar Analizi',
+        'footer.riskManagement': 'Risk Yönetimi',
+        'footer.processOptimization': 'Süreç Optimizasyonu',
+        'footer.internationalTrade': 'Uluslararası Ticaret',
+        'footer.companyName': 'SCENORIA',
+        'footer.tagline': 'Stratejik İş Danışmanlığı',
+        'footer.description': 'Stratejik vizyon ve yenilikçi çözümlerle işletmeleri dönüştürüyoruz.',
+        'footer.quickLinks': 'Hızlı Bağlantılar',
+        'footer.services': 'Hizmetler',
+        'footer.company': 'Şirket',
+        'footer.about': 'Hakkında',
+        'footer.aboutUs': 'Hakkımızda',
+        'footer.insights': 'İçgörüler',
+        'footer.contact': 'İletişim',
+        'footer.contactInfo': 'İletişim Bilgileri',
+        'footer.email': 'E-posta',
+        'footer.phone': 'Telefon',
+        'footer.address': 'Adres',
+        'footer.copyright': '© 2024 SCENORIA. Tüm hakları saklıdır.',
+        'footer.rightsReserved': '© 2024 SCENORIA. Tüm hakları saklıdır.',
+        'footer.careers': 'Kariyer',
+        'footer.privacyPolicy': 'Gizlilik Politikası',
+        'footer.termsOfService': 'Hizmet Şartları',
+        'footer.poweredBy': 'Readly tarafından desteklenmektedir',
+        'contact.emailAddress': 'info@scenoria.com',
+        'contact.phoneNumber': '+1 (555) 123-4567'
+      }
     };
-    return translations[key] || key;
+    return translations[currentLocale]?.[key] || translations.en[key] || key;
   };
   const pathname = usePathname();
   
   // Get current locale from pathname
   const segments = pathname.split('/');
-  const currentLocale = segments[1] && ['en', 'zh'].includes(segments[1]) ? segments[1] : 'en';
+  const currentLocale = segments[1] && ['en', 'zh', 'tr'].includes(segments[1]) ? segments[1] : 'en';
   
   const getLocalizedPath = (path) => {
     return `/${currentLocale}${path}`;

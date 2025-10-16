@@ -1,14 +1,141 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, createTranslationFunction } from '@/lib/translations';
 import Link from 'next/link';
 
-export default async function ServiceDetail({ params }) {
+export default function ServiceDetail({ params }) {
+  const [locale, setLocale] = useState('en');
+  const [id, setId] = useState('');
+
+  // Get locale and id from params
+  useEffect(() => {
+    const getParams = async () => {
   const resolvedParams = await params;
-  const { locale, id } = resolvedParams || { locale: 'en', id: '' };
-  const translations = await getTranslations(locale);
-  const t = createTranslationFunction(translations);
+      setLocale(resolvedParams?.locale || 'en');
+      setId(resolvedParams?.id || '');
+    };
+    getParams();
+  }, [params]);
+
+  // Translation function
+  const t = (key) => {
+    const translations = {
+      en: {
+        'services.newTrendTech': 'New Trend Technologies',
+        'services.newTrendTechDesc': 'Transform your business operations with comprehensive process management solutions.',
+        'services.technology': 'Technology',
+        'services.viewAllServices': 'View All Services',
+        'services.getStarted': 'Get Started',
+        'serviceDetail.getStartedToday': 'Get Started Today',
+        'serviceDetail.viewAllServices': 'View All Services',
+        'serviceDetail.serviceIllustration': 'Service Illustration',
+        'serviceDetail.keyFeatures': 'Key Features',
+        'serviceDetail.ourProvenProcess': 'Our Proven Process',
+        'serviceDetail.provenProcessDesc': 'We follow a systematic approach to deliver exceptional results for every project.',
+        'serviceDetail.step': 'Step',
+        'serviceDetail.whatOurClientsSay': 'What Our Clients Say',
+        'serviceDetail.readyToGetStarted': 'Ready to Get Started?',
+        'serviceDetail.contactExperts': 'Contact our experts to discuss your project requirements and get a customized solution.',
+        'serviceDetail.startYourProject': 'Start Your Project',
+        'serviceDetail.serviceNotFound': 'Service Not Found',
+        'serviceDetail.serviceNotFoundDesc': 'The service you are looking for could not be found.',
+        'serviceDetail.backToServices': 'Back to Services',
+        'services.machineEquipmentInv': 'Machinery & Equipment Investment',
+        'services.machineEquipmentDesc': 'Expert analysis and feasibility studies for industrial investment decisions.',
+        'services.investment': 'Investment',
+        'services.international': 'International',
+        'services.trade': 'Trade',
+        'services.operation': 'Operation',
+        'services.risk': 'Risk',
+        'services.investmentAnalysis': 'Investment Analysis',
+        'services.investmentAnalysisDesc': 'Comprehensive analysis of investment opportunities and market conditions',
+        'services.equipmentEvaluation': 'Equipment Evaluation',
+        'services.equipmentEvaluationDesc': 'Technical assessment and performance analysis of equipment options',
+        'services.roiOptimization': 'ROI Optimization',
+        'services.roiOptimizationDesc': 'Maximize return on investment through strategic planning',
+        'services.supplierSelection': 'Supplier Selection',
+        'services.supplierSelectionDesc': 'Identify and evaluate reliable suppliers and manufacturers',
+        'services.riskManagementConsulting': 'Risk Management Consulting'
+      },
+      zh: {
+        'services.newTrendTech': '新趋势技术',
+        'services.newTrendTechDesc': '通过全面的流程管理解决方案转变您的业务运营。',
+        'services.technology': '技术',
+        'services.viewAllServices': '查看所有服务',
+        'services.getStarted': '立即开始',
+        'serviceDetail.getStartedToday': '立即开始',
+        'serviceDetail.viewAllServices': '查看所有服务',
+        'serviceDetail.serviceIllustration': '服务插图',
+        'serviceDetail.keyFeatures': '主要特性',
+        'serviceDetail.ourProvenProcess': '我们经过验证的流程',
+        'serviceDetail.provenProcessDesc': '我们遵循系统化的方法，为每个项目提供卓越的结果。',
+        'serviceDetail.step': '步骤',
+        'serviceDetail.whatOurClientsSay': '客户评价',
+        'serviceDetail.readyToGetStarted': '准备开始了吗？',
+        'serviceDetail.contactExperts': '联系我们的专家，讨论您的项目需求并获得定制解决方案。',
+        'serviceDetail.startYourProject': '开始您的项目',
+        'serviceDetail.serviceNotFound': '服务未找到',
+        'serviceDetail.serviceNotFoundDesc': '您查找的服务未找到。',
+        'serviceDetail.backToServices': '返回服务',
+        'services.machineEquipmentInv': '机械设备投资',
+        'services.machineEquipmentDesc': '为工业投资决策提供专家分析和可行性研究。',
+        'services.investment': '投资',
+        'services.international': '国际',
+        'services.trade': '贸易',
+        'services.operation': '运营',
+        'services.risk': '风险',
+        'services.investmentAnalysis': '投资分析',
+        'services.investmentAnalysisDesc': '投资机会和市场条件的综合分析',
+        'services.equipmentEvaluation': '设备评估',
+        'services.equipmentEvaluationDesc': '设备选项的技术评估和性能分析',
+        'services.roiOptimization': '投资回报优化',
+        'services.roiOptimizationDesc': '通过战略规划最大化投资回报',
+        'services.supplierSelection': '供应商选择',
+        'services.supplierSelectionDesc': '识别和评估可靠的供应商和制造商',
+        'services.riskManagementConsulting': '风险管理咨询'
+      },
+      tr: {
+        'services.newTrendTech': 'Yeni Trend Teknolojiler',
+        'services.newTrendTechDesc': 'Kapsamlı süreç yönetimi çözümleri ile iş operasyonlarınızı dönüştürün.',
+        'services.technology': 'Teknoloji',
+        'services.viewAllServices': 'Tüm Hizmetleri Görüntüle',
+        'services.getStarted': 'Hemen Başla',
+        'serviceDetail.getStartedToday': 'Bugün Başla',
+        'serviceDetail.viewAllServices': 'Tüm Hizmetleri Görüntüle',
+        'serviceDetail.serviceIllustration': 'Hizmet İllüstrasyonu',
+        'serviceDetail.keyFeatures': 'Temel Özellikler',
+        'serviceDetail.ourProvenProcess': 'Kanıtlanmış Sürecimiz',
+        'serviceDetail.provenProcessDesc': 'Her proje için olağanüstü sonuçlar sunmak için sistematik bir yaklaşım izliyoruz.',
+        'serviceDetail.step': 'Adım',
+        'serviceDetail.whatOurClientsSay': 'Müşterilerimiz Ne Diyor',
+        'serviceDetail.readyToGetStarted': 'Başlamaya Hazır mısınız?',
+        'serviceDetail.contactExperts': 'Proje gereksinimlerinizi görüşmek ve özel çözüm almak için uzmanlarımızla iletişime geçin.',
+        'serviceDetail.startYourProject': 'Projenizi Başlatın',
+        'serviceDetail.serviceNotFound': 'Hizmet Bulunamadı',
+        'serviceDetail.serviceNotFoundDesc': 'Aradığınız hizmet bulunamadı.',
+        'serviceDetail.backToServices': 'Hizmetlere Dön',
+        'services.machineEquipmentInv': 'Makine & Ekipman Yatırımı',
+        'services.machineEquipmentDesc': 'Sanayii yatırım kararları için uzman analiz ve fizibilite çalışmaları.',
+        'services.investment': 'Yatırım',
+        'services.international': 'Uluslararası',
+        'services.trade': 'Ticaret',
+        'services.operation': 'Operasyon',
+        'services.risk': 'Risk',
+        'services.investmentAnalysis': 'Yatırım Analizi',
+        'services.investmentAnalysisDesc': 'Yatırım fırsatları ve pazar koşullarının kapsamlı analizi',
+        'services.equipmentEvaluation': 'Ekipman Değerlendirmesi',
+        'services.equipmentEvaluationDesc': 'Ekipman seçeneklerinin teknik değerlendirmesi ve performans analizi',
+        'services.roiOptimization': 'Yatırım Getirisi Optimizasyonu',
+        'services.roiOptimizationDesc': 'Stratejik planlama ile yatırım getirisini maksimize edin',
+        'services.supplierSelection': 'Tedarikçi Seçimi',
+        'services.supplierSelectionDesc': 'Güvenilir tedarikçileri ve üreticileri belirleyin ve değerlendirin',
+        'services.riskManagementConsulting': 'Risk Yönetimi Danışmanlığı'
+      }
+    };
+    return translations[locale]?.[key] || translations.en[key] || key;
+  };
 
   // Services data - in a real app this would come from a CMS or database
   const servicesData = {
@@ -653,8 +780,11 @@ export default async function ServiceDetail({ params }) {
       {/* Detailed Content */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg prose-slate max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: service.content }} />
+          <div className="prose prose-lg prose-slate max-w-none text-slate-800">
+            <div 
+              className="text-slate-800 [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-slate-800 [&>h2]:mb-4 [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:text-slate-800 [&>h3]:mb-3 [&>h4]:text-lg [&>h4]:font-semibold [&>h4]:text-slate-800 [&>h4]:mb-2 [&>p]:text-slate-700 [&>p]:mb-4 [&>li]:text-slate-700 [&>li]:mb-2 [&>strong]:text-slate-800 [&>strong]:font-semibold [&_.grid]:grid [&_.grid-cols-2]:grid-cols-2 [&_.gap-4]:gap-4"
+              dangerouslySetInnerHTML={{ __html: service.content }} 
+            />
           </div>
         </div>
       </section>
