@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, createTranslationFunction } from '@/lib/translations';
+// import { getTranslations, createTranslationFunction } from '@/lib/translations';
 import { useServices } from '@/hooks/useAPI';
 
 export default function Home({ params }) {
@@ -12,18 +12,18 @@ export default function Home({ params }) {
   const [translations, setTranslations] = useState({});
   const { services, loading: servicesLoading, error: servicesError } = useServices();
 
-  useEffect(() => {
-    const initTranslations = async () => {
-      const resolvedParams = await params;
-      const currentLocale = resolvedParams?.locale || 'en';
-      setLocale(currentLocale);
-      const trans = await getTranslations(currentLocale);
-      setTranslations(trans);
+  // Simple translation function for demo
+  const t = (key) => {
+    const translations = {
+      'hero.title': 'Take Your Business',
+      'hero.titleHighlight': 'To The Top',
+      'hero.subtitle': 'From technology trends to investment strategies, everything you need for sustainable growth in global markets.',
+      'hero.exploreServices': 'Explore Services',
+      'hero.experience': 'With our 15+ years of experience and 500+ successful projects, we prepare your business for the future.',
+      'services.viewAllServices': 'View All Services'
     };
-    initTranslations();
-  }, [params]);
-
-  const t = createTranslationFunction(translations);
+    return translations[key] || key;
+  };
 
   return (
     <div className="min-h-screen bg-white">
