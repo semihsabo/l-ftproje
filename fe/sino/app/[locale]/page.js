@@ -65,7 +65,7 @@ export default async function Home({ params }) {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-xl p-8">
                 {/* Professional Business Meeting Image - Figma Style */}
-                <div className="rounded-xl h-80 mb-6 relative overflow-hidden">
+                <div className="rounded-xl h-80 mb-6 relative overflow-hidden bg-gradient-to-br from-slate-100 to-purple-100">
                   <Image 
                     src="/hero-business-meeting.jpg" 
                     alt="Professional business meeting with team collaboration"
@@ -74,6 +74,12 @@ export default async function Home({ params }) {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority
                   />
+                  {/* Fallback content when image fails */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-600 p-8 bg-gradient-to-br from-slate-100 to-purple-100">
+                    <div className="text-6xl mb-4">🏢</div>
+                    <h3 className="text-2xl font-bold mb-2 text-slate-800">Professional Workspace</h3>
+                    <p className="text-center opacity-80">Strategic Business Consultation Environment</p>
+                  </div>
                 </div>
                 
                 <p className="text-slate-600 text-base mb-6">
