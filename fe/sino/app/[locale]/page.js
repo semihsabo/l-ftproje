@@ -35,19 +35,30 @@ export default function Home({ params }) {
         'hero.subtitle': 'From technology trends to investment strategies, everything you need for sustainable growth in global markets.',
         'hero.exploreServices': 'Explore Services',
         'hero.experience': 'With our 15+ years of experience and 500+ successful projects, we prepare your business for the future.',
+        'hero.expertTeam': 'Expert Team',
+        'hero.innovativeSolutions': 'Innovative Solutions',
+        'hero.globalNetwork': 'Global Network',
         'services.viewAllServices': 'View All Services',
         'services.techTrends': 'New Trend Technologies',
         'services.techDesc': 'Integrate developing technologies like AI, blockchain, IoT, and metaverse into your business to gain a competitive advantage.',
         'services.machineInvestment': 'Machine & Equipment Investment',
+        'services.machineDesc': 'Industrial investment decisions for expert analysis and feasibility studies.',
         'services.chineseInvestors': 'Chinese Investors',
+        'services.chineseDesc': 'Special consultancy for entering the Chinese market and investment opportunities.',
         'services.importServices': 'Import Services',
+        'services.importDesc': 'Catching trends and dealership relations, end-to-end import operations.',
         'services.processManagement': 'Process Management',
+        'services.processDesc': 'Comprehensive process management that increases operational efficiency. Key solutions.',
         'services.foreignTrade': 'Foreign Trade Intelligence',
+        'services.foreignDesc': 'Detailed intelligence providing competitive advantage in global markets.',
         'services.riskManagement': 'Risk Management',
+        'services.riskDesc': 'Strategies for identifying, assessing, and mitigating business risks.',
         'services.sectorAnalysis': 'Sector Analysis',
+        'services.sectorDesc': 'In-depth sector and market research.',
         'services.successRate': 'Success Rate',
         'services.efficiency': 'Efficiency Increase',
         'services.countryAnalysis': 'Country Analysis',
+        'services.successfulImport': 'Successful Import',
         'transforming.title': 'Transforming Businesses Through Strategic Vision',
         'transforming.desc1': 'We provide comprehensive strategic consulting services that help businesses identify growth opportunities, optimize operations, and navigate complex market dynamics.',
         'transforming.desc2': 'Our team of experts combines deep industry knowledge with innovative thinking to deliver solutions that drive sustainable growth and competitive advantage.',
@@ -57,9 +68,9 @@ export default function Home({ params }) {
         'cta.subtitle': "Let's discuss how our strategic consulting services can help you achieve your business objectives and unlock new growth opportunities.",
         'cta.button': 'Schedule a Consultation',
         'stats.clients': 'Clients',
-        'stats.managed': 'Managed Relationships',
+        'stats.managed': 'Assets Under Management',
         'stats.countries': 'Country Experience',
-        'stats.experience': 'Years Experience'
+        'stats.experience': 'Years of Experience'
       },
       zh: {
         'hero.title': '引领您的企业',
@@ -67,19 +78,30 @@ export default function Home({ params }) {
         'hero.subtitle': '从技术趋势到投资策略，为您提供全球市场可持续增长所需的一切。',
         'hero.exploreServices': '探索服务',
         'hero.experience': '凭借我们15年以上的经验和500多个成功项目，我们为您的企业未来做好准备。',
+        'hero.expertTeam': '专家团队',
+        'hero.innovativeSolutions': '创新解决方案',
+        'hero.globalNetwork': '全球网络',
         'services.viewAllServices': '查看所有服务',
         'services.techTrends': '新趋势技术',
         'services.techDesc': '将人工智能、区块链、物联网和元宇宙等新兴技术集成到您的业务中，以获得竞争优势。',
         'services.machineInvestment': '机械设备投资',
+        'services.machineDesc': '工业投资决策的专家分析和可行性研究。',
         'services.chineseInvestors': '中国投资者',
+        'services.chineseDesc': '进入中国市场和投资机会的专业咨询。',
         'services.importServices': '进口服务',
+        'services.importDesc': '捕捉趋势和代理关系，端到端进口运营。',
         'services.processManagement': '流程管理',
+        'services.processDesc': '提高运营效率的综合流程管理。关键解决方案。',
         'services.foreignTrade': '外贸情报',
+        'services.foreignDesc': '在全球市场提供竞争优势的详细情报。',
         'services.riskManagement': '风险管理',
+        'services.riskDesc': '识别、评估和缓解业务风险的策略。',
         'services.sectorAnalysis': '行业分析',
+        'services.sectorDesc': '深入的行业和市场研究。',
         'services.successRate': '成功率',
         'services.efficiency': '效率提升',
         'services.countryAnalysis': '国家分析',
+        'services.successfulImport': '成功进口',
         'transforming.title': '通过战略愿景转变企业',
         'transforming.desc1': '我们提供全面的战略咨询服务，帮助企业识别增长机会、优化运营并驾驭复杂的市场动态。',
         'transforming.desc2': '我们的专家团队将深厚的行业知识与创新思维相结合，提供推动可持续增长和竞争优势的解决方案。',
@@ -89,7 +111,7 @@ export default function Home({ params }) {
         'cta.subtitle': '让我们讨论我们的战略咨询服务如何帮助您实现业务目标并释放新的增长机会。',
         'cta.button': '安排咨询',
         'stats.clients': '客户',
-        'stats.managed': '管理关系',
+        'stats.managed': '管理资产',
         'stats.countries': '国家经验',
         'stats.experience': '年经验'
       },
@@ -99,19 +121,30 @@ export default function Home({ params }) {
         'hero.subtitle': 'Teknoloji trendlerinden yatırım stratejilerine kadar, küresel pazarlarda sürdürülebilir büyüme için ihtiyacınız olan her şey.',
         'hero.exploreServices': 'Hizmetleri Keşfet',
         'hero.experience': '15 yıllık deneyimimiz ve 500\'den fazla başarılı projemizle işinizi geleceğe hazırlıyoruz.',
+        'hero.expertTeam': 'Uzman Ekip',
+        'hero.innovativeSolutions': 'Yenilikçi Çözümler',
+        'hero.globalNetwork': 'Küresel Ağ',
         'services.viewAllServices': 'Tüm Hizmetleri Görüntüle',
         'services.techTrends': 'Yeni Trend Teknolojiler',
         'services.techDesc': 'AI, blockchain, IoT ve metaverse gibi gelişen teknolojileri işletmenize entegre ederek rekabet avantajı sağlayın.',
         'services.machineInvestment': 'Makine & Ekipman Yatırımı',
+        'services.machineDesc': 'Sanayi yatırım kararları için uzman analiz ve fizibilite çalışmaları.',
         'services.chineseInvestors': 'Çinli Yatırımcılar',
+        'services.chineseDesc': 'Çin pazarına giriş ve yatırım fırsatları için özel danışmanlık.',
         'services.importServices': 'İthalat Hizmetleri',
+        'services.importDesc': 'Trend yakalama ve bayilik ilişkileri ile baştan sona ithalat operasyonları.',
         'services.processManagement': 'Süreç Yönetimi',
+        'services.processDesc': 'Operasyonel verimliliği artıran kapsamlı süreç yönetimi. Anahtar çözümler.',
         'services.foreignTrade': 'Dış Ticaret İstihbaratı',
+        'services.foreignDesc': 'Küresel pazarlarda rekabet avantajı sağlayan detaylı istihbarat.',
         'services.riskManagement': 'Risk Yönetimi',
+        'services.riskDesc': 'İş risklerini belirleme, değerlendirme ve azaltma stratejileri.',
         'services.sectorAnalysis': 'Sektör Analizi',
+        'services.sectorDesc': 'Derinlemesine sektör ve pazar araştırmaları.',
         'services.successRate': 'Başarı Oranı',
         'services.efficiency': 'Verimlilik Artışı',
         'services.countryAnalysis': 'Ülke Analizi',
+        'services.successfulImport': 'Başarılı İthalat',
         'transforming.title': 'Stratejik Vizyonla İşletmeleri Dönüştürme',
         'transforming.desc1': 'İşletmelerin büyüme fırsatlarını belirlemesine, operasyonlarını optimize etmesine ve karmaşık pazar dinamiklerini yönetmesine yardımcı olan kapsamlı stratejik danışmanlık hizmetleri sunuyoruz.',
         'transforming.desc2': 'Uzman ekibimiz, derin endüstri bilgisi ile yenilikçi düşünceyi birleştirerek sürdürülebilir büyüme ve rekabet avantajı sağlayan çözümler sunar.',
@@ -121,9 +154,9 @@ export default function Home({ params }) {
         'cta.subtitle': 'Stratejik danışmanlık hizmetlerimizin iş hedeflerinize ulaşmanıza ve yeni büyüme fırsatlarını kilitlemenize nasıl yardımcı olabileceğini tartışalım.',
         'cta.button': 'Danışmanlık Randevusu Al',
         'stats.clients': 'Müşteri',
-        'stats.managed': 'Yönetilen İlişki',
+        'stats.managed': 'Yönetilen Varlık',
         'stats.countries': 'Ülke Deneyimi',
-        'stats.experience': 'Yıl Tecrübe'
+        'stats.experience': 'Yıllık Tecrübe'
       }
     };
     return translations[locale]?.[key] || translations.en[key] || key;
@@ -133,133 +166,83 @@ export default function Home({ params }) {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section with Services Overlay */}
-      <section className="relative h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/hero-business-meeting.jpg"
-            alt="Professional business meeting"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-purple-900/60 to-slate-900/80"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Left Side - Hero Text */}
-              <div className="text-white space-y-8">
-                <div className="space-y-6">
-                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                    {t('hero.title')}<br />
-                    <span className="text-purple-400">{t('hero.titleHighlight')}</span>
-                  </h1>
-                  <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
-                    {t('hero.subtitle')}
-                  </p>
-                </div>
-                
-                <button className="bg-white text-slate-800 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300 flex items-center gap-3 text-lg">
-                  {t('hero.exploreServices')}
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-
-                <p className="text-gray-300 text-lg">
-                  {t('hero.experience')}
+      {/* Hero Section */}
+      <section className="bg-white py-20 pt-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Hero Text */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                  {t('hero.title')}<br />
+                  <span className="text-purple-600 relative">
+                    {t('hero.titleHighlight')}
+                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-purple-600"></div>
+                  </span>
+                </h1>
+                <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
+                  {t('hero.subtitle')}
                 </p>
               </div>
+              
+              <button className="bg-white border border-slate-300 text-slate-800 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-all duration-300 flex items-center gap-2">
+                {t('hero.exploreServices')}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
 
-              {/* Right Side - Service Cards */}
-              <div className="space-y-6">
-                {/* Main Service Card */}
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-blue-400 rounded-full flex items-center justify-center">
-                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-white">{t('services.techTrends')}</h3>
-                        <p className="text-gray-300 text-sm">{t('services.techDesc')}</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="bg-yellow-400 text-slate-800 px-3 py-1 rounded-full text-sm font-bold">95%</div>
-                      <div className="text-gray-300 text-xs mt-1">{t('services.successRate')}</div>
-                    </div>
+              <p className="text-slate-600 text-lg">
+                {t('hero.experience')}
+              </p>
+
+              {/* Feature Cards */}
+              <div className="grid grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
                   </div>
-                  
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm">AI & Machine Learning</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm">IoT Integration</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm">Blockchain Solutions</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-300">
-                      <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm">Digital Transformation</span>
-                    </div>
-                  </div>
+                  <h3 className="font-semibold text-slate-800">{t('hero.expertTeam')}</h3>
                 </div>
-
-                {/* Side Service Cards */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
-                        <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                        </svg>
-                      </div>
-                      <h4 className="text-white font-semibold">{t('services.machineInvestment')}</h4>
-                    </div>
-                    <p className="text-gray-300 text-sm mb-3">Industrial machinery and equipment investment</p>
-                    <button className="text-blue-400 text-sm hover:text-blue-300 transition-colors">Detailed Information</button>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
                   </div>
-
-                  <div className="bg-gradient-to-br from-purple-700/50 to-blue-700/50 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center">
-                        <svg className="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <h4 className="text-white font-semibold">{t('services.chineseInvestors')}</h4>
-                    </div>
-                    <p className="text-gray-300 text-sm mb-3">Chinese investors business meeting</p>
-                    <button className="text-purple-400 text-sm hover:text-purple-300 transition-colors">Detailed Information</button>
-                  </div>
+                  <h3 className="font-semibold text-slate-800">{t('hero.innovativeSolutions')}</h3>
                 </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+                    </svg>
+                  </div>
+                  <h3 className="font-semibold text-slate-800">{t('hero.globalNetwork')}</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="relative">
+              <div className="rounded-2xl h-96 overflow-hidden shadow-lg">
+                <Image
+                  src="/hero-business-meeting.jpg"
+                  alt="Professional business meeting with team collaboration"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Grid Section */}
+      {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Loading State */}
@@ -280,12 +263,112 @@ export default function Home({ params }) {
           {/* Services Grid */}
           {!servicesLoading && !servicesError && services && services.length > 0 && (
             <div className="space-y-8">
-              {/* Top Row */}
+              {/* Top Row - Large Card + 2 Small Cards */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {/* Large Main Card */}
+                <div className="lg:col-span-1">
+                  <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8 text-white relative overflow-hidden h-full">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 opacity-20">
+                      <Image
+                        src="/tech-consulting-analytics.jpg"
+                        alt="Technology consulting"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    
+                    <div className="relative z-10">
+                      <div className="absolute top-4 right-4 text-right">
+                        <div className="bg-yellow-400 text-slate-800 px-3 py-1 rounded-full text-sm font-bold">95%</div>
+                        <div className="text-white/70 text-xs mt-1">{t('services.successRate')}</div>
+                      </div>
+                      
+                      <h3 className="text-2xl font-bold mb-4">{t('services.techTrends')}</h3>
+                      <p className="text-white/90 mb-6 text-sm leading-relaxed">
+                        {t('services.techDesc')}
+                      </p>
+                      
+                      <div className="space-y-2 mb-6">
+                        <div className="flex items-center gap-2 text-white/80">
+                          <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-sm">AI & Machine Learning</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-white/80">
+                          <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-sm">IoT Integration</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-white/80">
+                          <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-sm">Blockchain Solutions</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-white/80">
+                          <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          <span className="text-sm">Digital Transformation</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Two Small Cards */}
+                <div className="lg:col-span-2 space-y-6">
+                  <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 text-white relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-20">
+                      <Image
+                        src="/machinery-investment-factory.jpg"
+                        alt="Industrial machinery"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="relative z-10">
+                      <h4 className="text-xl font-bold mb-3">{t('services.machineInvestment')}</h4>
+                      <p className="text-white/80 text-sm mb-4">
+                        {t('services.machineDesc')}
+                      </p>
+                      <button className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
+                        Detailed Information
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-purple-700 to-blue-700 rounded-2xl p-6 text-white relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-20">
+                      <Image
+                        src="/chinese-investors-meeting.jpg"
+                        alt="Chinese investors"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="relative z-10">
+                      <h4 className="text-xl font-bold mb-3">{t('services.chineseInvestors')}</h4>
+                      <p className="text-white/80 text-sm mb-4">
+                        {t('services.chineseDesc')}
+                      </p>
+                      <button className="text-purple-400 text-sm hover:text-purple-300 transition-colors">
+                        Detailed Information
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Middle Row - 3 Cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-8 text-white relative overflow-hidden">
+                <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 text-white relative overflow-hidden">
                   <div className="absolute top-4 right-4 text-right">
-                    <div className="text-3xl font-bold">150+</div>
-                    <div className="text-sm text-white/70">Successful Import</div>
+                    <div className="text-2xl font-bold">150+</div>
+                    <div className="text-xs text-white/70">{t('services.successfulImport')}</div>
                   </div>
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -295,17 +378,19 @@ export default function Home({ params }) {
                     </div>
                     <h4 className="text-xl font-bold">{t('services.importServices')}</h4>
                   </div>
-                  <p className="text-white/80 mb-4">Trend yakalama ve bayilik ilişkileri ile bugünkü ithalat operasyonları</p>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.importDesc')}
+                  </p>
                   <div className="flex gap-2">
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Trend Analizi</span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Tedarikçi İlişkileri</span>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white relative overflow-hidden">
+                <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 text-white relative overflow-hidden">
                   <div className="absolute top-4 right-4 text-right">
-                    <div className="text-3xl font-bold">40%</div>
-                    <div className="text-sm text-white/70">{t('services.efficiency')}</div>
+                    <div className="text-2xl font-bold">40%</div>
+                    <div className="text-xs text-white/70">{t('services.efficiency')}</div>
                   </div>
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -315,17 +400,19 @@ export default function Home({ params }) {
                     </div>
                     <h4 className="text-xl font-bold">{t('services.processManagement')}</h4>
                   </div>
-                  <p className="text-white/80 mb-4">Operasyonel verimliliği artıran kapsamlı süreç yönetimi çözümleri</p>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.processDesc')}
+                  </p>
                   <div className="flex gap-2">
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Süreç Optimizasyonu</span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Verimlilik Analizi</span>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl p-8 text-white relative overflow-hidden">
+                <div className="bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl p-6 text-white relative overflow-hidden">
                   <div className="absolute top-4 right-4 text-right">
-                    <div className="text-3xl font-bold">50+</div>
-                    <div className="text-sm text-white/70">{t('services.countryAnalysis')}</div>
+                    <div className="text-2xl font-bold">50+</div>
+                    <div className="text-xs text-white/70">{t('services.countryAnalysis')}</div>
                   </div>
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -335,7 +422,9 @@ export default function Home({ params }) {
                     </div>
                     <h4 className="text-xl font-bold">{t('services.foreignTrade')}</h4>
                   </div>
-                  <p className="text-white/80 mb-4">Küresel ticaret fırsatları ve pazar analizi</p>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.foreignDesc')}
+                  </p>
                   <div className="flex gap-2">
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Pazar Analizi</span>
                     <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Ticaret Fırsatları</span>
@@ -343,9 +432,9 @@ export default function Home({ params }) {
                 </div>
               </div>
 
-              {/* Bottom Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-8 text-white relative overflow-hidden">
+              {/* Bottom Row - 3 Small Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-6 text-white relative overflow-hidden">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -354,16 +443,15 @@ export default function Home({ params }) {
                     </div>
                     <h4 className="text-xl font-bold">{t('services.riskManagement')}</h4>
                   </div>
-                  <p className="text-white/80 mb-4">Kapsamlı risk değerlendirme ve yönetim stratejileri</p>
-                  <button className="bg-white text-red-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
-                    Detailed Information
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.riskDesc')}
+                  </p>
+                  <div className="flex gap-2">
+                    <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Risk Analizi</span>
+                  </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl p-8 text-white relative overflow-hidden">
+                <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl p-6 text-white relative overflow-hidden">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -372,13 +460,34 @@ export default function Home({ params }) {
                     </div>
                     <h4 className="text-xl font-bold">{t('services.sectorAnalysis')}</h4>
                   </div>
-                  <p className="text-white/80 mb-4">Endüstri analizi ve rekabet istihbaratı</p>
-                  <button className="bg-white text-purple-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors flex items-center gap-2">
-                    Detailed Information
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.sectorDesc')}
+                  </p>
+                  <div className="flex gap-2">
+                    <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Pazar Araştırması</span>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl p-6 text-white relative overflow-hidden">
+                  <div className="absolute top-4 right-4 text-right">
+                    <div className="text-2xl font-bold">50+</div>
+                    <div className="text-xs text-white/70">{t('services.countryAnalysis')}</div>
+                  </div>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-bold">{t('services.foreignTrade')}</h4>
+                  </div>
+                  <p className="text-white/80 text-sm mb-4">
+                    {t('services.foreignDesc')}
+                  </p>
+                  <div className="flex gap-2">
+                    <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Pazar Analizi</span>
+                    <span className="bg-white/20 text-white px-3 py-1 rounded-full text-xs">Ticaret Fırsatları</span>
+                  </div>
                 </div>
               </div>
 
@@ -387,7 +496,7 @@ export default function Home({ params }) {
                 <button className="bg-slate-800 text-white px-8 py-3 rounded-lg font-medium hover:bg-slate-700 transition-colors flex items-center gap-2 mx-auto">
                   {t('services.viewAllServices')}
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                   </svg>
                 </button>
               </div>
@@ -434,11 +543,6 @@ export default function Home({ params }) {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="text-lg font-medium mb-1">Strategic Consultation</p>
-                  <p className="text-sm opacity-90">Modern workspace for business transformation</p>
-                </div>
               </div>
             </div>
           </div>
@@ -467,7 +571,7 @@ export default function Home({ params }) {
               <div className="text-gray-300">{t('stats.clients')}</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-white mb-2">B2B+</div>
+              <div className="text-4xl font-bold text-white mb-2">1.2B+</div>
               <div className="text-gray-300">{t('stats.managed')}</div>
             </div>
             <div>
