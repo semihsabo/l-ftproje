@@ -322,7 +322,7 @@ export default function Home({ params }) {
                 {/* Two Small Cards */}
                 <div className="lg:col-span-2 space-y-6">
                   <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl p-6 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20">
+                    <div className="absolute inset-0 opacity-30">
                       <Image
                         src="/machinery-investment-factory.jpg"
                         alt="Industrial machinery"
@@ -342,7 +342,7 @@ export default function Home({ params }) {
                   </div>
 
                   <div className="bg-gradient-to-br from-purple-700 to-blue-700 rounded-2xl p-6 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20">
+                    <div className="absolute inset-0 opacity-30">
                       <Image
                         src="/chinese-investors-meeting.jpg"
                         alt="Chinese investors"
