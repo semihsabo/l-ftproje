@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getTranslations, createTranslationFunction } from '@/lib/translations';
@@ -65,10 +66,13 @@ export default async function Home({ params }) {
               <div className="bg-white rounded-2xl shadow-xl p-8">
                 {/* Professional Business Meeting Image - Figma Style */}
                 <div className="rounded-xl h-80 mb-6 relative overflow-hidden">
-                  <img 
+                  <Image 
                     src="/hero-business-meeting.jpg" 
                     alt="Professional business meeting with team collaboration"
-                    className="w-full h-full object-cover rounded-xl"
+                    fill
+                    className="object-cover rounded-xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority
                   />
                 </div>
                 
