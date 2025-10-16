@@ -1,14 +1,166 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, createTranslationFunction } from '@/lib/translations';
 import Link from 'next/link';
 
-export default async function Services({ params }) {
+export default function Services({ params }) {
+  const [locale, setLocale] = useState('en');
+
+  // Get locale from params
+  useEffect(() => {
+    const getLocale = async () => {
   const resolvedParams = await params;
-  const { locale } = resolvedParams || { locale: 'en' };
-  const translations = await getTranslations(locale);
-  const t = createTranslationFunction(translations);
+      setLocale(resolvedParams?.locale || 'en');
+    };
+    getLocale();
+  }, [params]);
+
+  // Translation function with multiple languages
+  const t = (key) => {
+    const translations = {
+      en: {
+        'services.newTrendTech': 'New Trend Technologies',
+        'services.newTrendTechDesc': 'Transform your business operations with comprehensive process management solutions.',
+        'services.techEvaluation': 'Technology Evaluation',
+        'services.digitalTransformation': 'Digital Transformation',
+        'services.innovationStrategy': 'Innovation Strategy',
+        'services.techImplementation': 'Technology Implementation',
+        'services.technology': 'Technology',
+        'services.machineEquipmentInv': 'Machine & Equipment Investment',
+        'services.machineEquipmentDesc': 'Industrial investment decisions for expert analysis and feasibility studies.',
+        'services.investmentAnalysis': 'Investment Analysis',
+        'services.equipmentEvaluation': 'Equipment Evaluation',
+        'services.roiOptimization': 'ROI Optimization',
+        'services.supplierSelection': 'Supplier Selection',
+        'services.investment': 'Investment',
+        'services.chineseInvestorServices': 'Chinese Investor Services',
+        'services.chineseInvestorDesc': 'Special consultancy for entering the Chinese market and investment opportunities.',
+        'services.marketEntry': 'Market Entry',
+        'services.investmentGuidance': 'Investment Guidance',
+        'services.culturalBridge': 'Cultural Bridge',
+        'services.regulatoryCompliance': 'Regulatory Compliance',
+        'services.international': 'International',
+        'services.importServices': 'Import Services',
+        'services.importServicesDesc': 'Catching trends and dealership relations, end-to-end import operations.',
+        'services.trendAnalysis': 'Trend Analysis',
+        'services.supplierRelations': 'Supplier Relations',
+        'services.logisticsOptimization': 'Logistics Optimization',
+        'services.customsClearance': 'Customs Clearance',
+        'services.trade': 'Trade',
+        'services.processManagement': 'Process Management',
+        'services.processManagementDesc': 'Comprehensive process management that increases operational efficiency. Key solutions.',
+        'services.processOptimization': 'Process Optimization',
+        'services.efficiencyAnalysis': 'Efficiency Analysis',
+        'services.workflowDesign': 'Workflow Design',
+        'services.performanceMetrics': 'Performance Metrics',
+        'services.operations': 'Operations',
+        'services.foreignTradeIntelligence': 'Foreign Trade Intelligence',
+        'services.foreignTradeDesc': 'Detailed intelligence providing competitive advantage in global markets.',
+        'services.marketIntelligence': 'Market Intelligence',
+        'services.competitiveAnalysis': 'Competitive Analysis',
+        'services.tradeOpportunities': 'Trade Opportunities',
+        'services.riskAssessment': 'Risk Assessment',
+        'services.intelligence': 'Intelligence',
+        'services.viewAllServices': 'View All Services',
+        'services.getStarted': 'Get Started'
+      },
+      zh: {
+        'services.newTrendTech': '新趋势技术',
+        'services.newTrendTechDesc': '通过全面的流程管理解决方案转变您的业务运营。',
+        'services.techEvaluation': '技术评估',
+        'services.digitalTransformation': '数字化转型',
+        'services.innovationStrategy': '创新策略',
+        'services.techImplementation': '技术实施',
+        'services.technology': '技术',
+        'services.machineEquipmentInv': '机械设备投资',
+        'services.machineEquipmentDesc': '工业投资决策的专家分析和可行性研究。',
+        'services.investmentAnalysis': '投资分析',
+        'services.equipmentEvaluation': '设备评估',
+        'services.roiOptimization': '投资回报率优化',
+        'services.supplierSelection': '供应商选择',
+        'services.investment': '投资',
+        'services.chineseInvestorServices': '中国投资者服务',
+        'services.chineseInvestorDesc': '进入中国市场和投资机会的专业咨询。',
+        'services.marketEntry': '市场进入',
+        'services.investmentGuidance': '投资指导',
+        'services.culturalBridge': '文化桥梁',
+        'services.regulatoryCompliance': '法规合规',
+        'services.international': '国际',
+        'services.importServices': '进口服务',
+        'services.importServicesDesc': '捕捉趋势和代理关系，端到端进口运营。',
+        'services.trendAnalysis': '趋势分析',
+        'services.supplierRelations': '供应商关系',
+        'services.logisticsOptimization': '物流优化',
+        'services.customsClearance': '清关',
+        'services.trade': '贸易',
+        'services.processManagement': '流程管理',
+        'services.processManagementDesc': '提高运营效率的综合流程管理。关键解决方案。',
+        'services.processOptimization': '流程优化',
+        'services.efficiencyAnalysis': '效率分析',
+        'services.workflowDesign': '工作流设计',
+        'services.performanceMetrics': '性能指标',
+        'services.operations': '运营',
+        'services.foreignTradeIntelligence': '外贸情报',
+        'services.foreignTradeDesc': '在全球市场提供竞争优势的详细情报。',
+        'services.marketIntelligence': '市场情报',
+        'services.competitiveAnalysis': '竞争分析',
+        'services.tradeOpportunities': '贸易机会',
+        'services.riskAssessment': '风险评估',
+        'services.intelligence': '情报',
+        'services.viewAllServices': '查看所有服务',
+        'services.getStarted': '立即开始'
+      },
+      tr: {
+        'services.newTrendTech': 'Yeni Trend Teknolojiler',
+        'services.newTrendTechDesc': 'Kapsamlı süreç yönetimi çözümleri ile iş operasyonlarınızı dönüştürün.',
+        'services.techEvaluation': 'Teknoloji Değerlendirmesi',
+        'services.digitalTransformation': 'Dijital Dönüşüm',
+        'services.innovationStrategy': 'İnovasyon Stratejisi',
+        'services.techImplementation': 'Teknoloji Uygulaması',
+        'services.technology': 'Teknoloji',
+        'services.machineEquipmentInv': 'Makine & Ekipman Yatırımı',
+        'services.machineEquipmentDesc': 'Sanayi yatırım kararları için uzman analiz ve fizibilite çalışmaları.',
+        'services.investmentAnalysis': 'Yatırım Analizi',
+        'services.equipmentEvaluation': 'Ekipman Değerlendirmesi',
+        'services.roiOptimization': 'ROI Optimizasyonu',
+        'services.supplierSelection': 'Tedarikçi Seçimi',
+        'services.investment': 'Yatırım',
+        'services.chineseInvestorServices': 'Çinli Yatırımcı Hizmetleri',
+        'services.chineseInvestorDesc': 'Çin pazarına giriş ve yatırım fırsatları için özel danışmanlık.',
+        'services.marketEntry': 'Pazar Girişi',
+        'services.investmentGuidance': 'Yatırım Rehberliği',
+        'services.culturalBridge': 'Kültürel Köprü',
+        'services.regulatoryCompliance': 'Düzenleyici Uyumluluk',
+        'services.international': 'Uluslararası',
+        'services.importServices': 'İthalat Hizmetleri',
+        'services.importServicesDesc': 'Trend yakalama ve bayilik ilişkileri ile baştan sona ithalat operasyonları.',
+        'services.trendAnalysis': 'Trend Analizi',
+        'services.supplierRelations': 'Tedarikçi İlişkileri',
+        'services.logisticsOptimization': 'Lojistik Optimizasyonu',
+        'services.customsClearance': 'Gümrük İşlemleri',
+        'services.trade': 'Ticaret',
+        'services.processManagement': 'Süreç Yönetimi',
+        'services.processManagementDesc': 'Operasyonel verimliliği artıran kapsamlı süreç yönetimi. Anahtar çözümler.',
+        'services.processOptimization': 'Süreç Optimizasyonu',
+        'services.efficiencyAnalysis': 'Verimlilik Analizi',
+        'services.workflowDesign': 'İş Akışı Tasarımı',
+        'services.performanceMetrics': 'Performans Metrikleri',
+        'services.operations': 'Operasyonlar',
+        'services.foreignTradeIntelligence': 'Dış Ticaret İstihbaratı',
+        'services.foreignTradeDesc': 'Küresel pazarlarda rekabet avantajı sağlayan detaylı istihbarat.',
+        'services.marketIntelligence': 'Pazar İstihbaratı',
+        'services.competitiveAnalysis': 'Rekabet Analizi',
+        'services.tradeOpportunities': 'Ticaret Fırsatları',
+        'services.riskAssessment': 'Risk Değerlendirmesi',
+        'services.intelligence': 'İstihbarat',
+        'services.viewAllServices': 'Tüm Hizmetleri Görüntüle',
+        'services.getStarted': 'Hemen Başla'
+      }
+    };
+    return translations[locale]?.[key] || translations.en[key] || key;
+  };
   const services = [
     {
       id: 'new-trend-technology',
