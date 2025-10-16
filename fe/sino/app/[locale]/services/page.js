@@ -64,7 +64,22 @@ export default function Services({ params }) {
         'services.riskAssessment': 'Risk Assessment',
         'services.intelligence': 'Intelligence',
         'services.viewAllServices': 'View All Services',
-        'services.getStarted': 'Get Started'
+        'services.getStarted': 'Get Started',
+        'services.chineseInvestors': 'Chinese Investor Services',
+        'services.chineseInvestorsDesc': 'Special consultancy for entering the Chinese market and investment opportunities.',
+        'services.marketEntryStrategy': 'Market Entry Strategy',
+        'services.investorRelations': 'Investor Relations',
+        'services.culturalConsulting': 'Cultural Consulting',
+        'services.partnershipDevelopment': 'Partnership Development',
+        'services.importStrategy': 'Import Strategy',
+        'services.marketResearch': 'Market Research',
+        'services.riskManagement': 'Risk Management',
+        'services.riskManagementDesc': 'Strategies for identifying, assessing, and mitigating business risks.',
+        'services.riskAnalysis': 'Risk Analysis',
+        'services.complianceManagement': 'Compliance Management',
+        'services.businessContinuity': 'Business Continuity',
+        'services.insuranceOptimization': 'Insurance Optimization',
+        'services.risk': 'Risk'
       },
       zh: {
         'services.newTrendTech': '新趋势技术',
@@ -110,7 +125,22 @@ export default function Services({ params }) {
         'services.riskAssessment': '风险评估',
         'services.intelligence': '情报',
         'services.viewAllServices': '查看所有服务',
-        'services.getStarted': '立即开始'
+        'services.getStarted': '立即开始',
+        'services.chineseInvestors': '中国投资者服务',
+        'services.chineseInvestorsDesc': '进入中国市场和投资机会的专业咨询。',
+        'services.marketEntryStrategy': '市场进入策略',
+        'services.investorRelations': '投资者关系',
+        'services.culturalConsulting': '文化咨询',
+        'services.partnershipDevelopment': '合作伙伴发展',
+        'services.importStrategy': '进口策略',
+        'services.marketResearch': '市场研究',
+        'services.riskManagement': '风险管理',
+        'services.riskManagementDesc': '识别、评估和减轻业务风险的策略。',
+        'services.riskAnalysis': '风险分析',
+        'services.complianceManagement': '合规管理',
+        'services.businessContinuity': '业务连续性',
+        'services.insuranceOptimization': '保险优化',
+        'services.risk': '风险'
       },
       tr: {
         'services.newTrendTech': 'Yeni Trend Teknolojiler',
@@ -156,7 +186,22 @@ export default function Services({ params }) {
         'services.riskAssessment': 'Risk Değerlendirmesi',
         'services.intelligence': 'İstihbarat',
         'services.viewAllServices': 'Tüm Hizmetleri Görüntüle',
-        'services.getStarted': 'Hemen Başla'
+        'services.getStarted': 'Hemen Başla',
+        'services.chineseInvestors': 'Çinli Yatırımcı Hizmetleri',
+        'services.chineseInvestorsDesc': 'Çin pazarına giriş ve yatırım fırsatları için özel danışmanlık.',
+        'services.marketEntryStrategy': 'Pazar Giriş Stratejisi',
+        'services.investorRelations': 'Yatırımcı İlişkileri',
+        'services.culturalConsulting': 'Kültürel Danışmanlık',
+        'services.partnershipDevelopment': 'Ortaklık Geliştirme',
+        'services.importStrategy': 'İthalat Stratejisi',
+        'services.marketResearch': 'Pazar Araştırması',
+        'services.riskManagement': 'Risk Yönetimi',
+        'services.riskManagementDesc': 'İş risklerini belirleme, değerlendirme ve azaltma stratejileri.',
+        'services.riskAnalysis': 'Risk Analizi',
+        'services.complianceManagement': 'Uyumluluk Yönetimi',
+        'services.businessContinuity': 'İş Sürekliliği',
+        'services.insuranceOptimization': 'Sigorta Optimizasyonu',
+        'services.risk': 'Risk'
       }
     };
     return translations[locale]?.[key] || translations.en[key] || key;
