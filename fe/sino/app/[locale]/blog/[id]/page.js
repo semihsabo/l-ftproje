@@ -1,7 +1,8 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getTranslations, createTranslationFunction } from '@/lib/translations';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -126,11 +127,45 @@ const blogPosts = {
   }
 };
 
-export default async function BlogDetail({ params }) {
-  const resolvedParams = await params;
-  const { locale, id } = resolvedParams || { locale: 'en', id: '' };
-  const translations = await getTranslations(locale);
-  const t = createTranslationFunction(translations);
+export default function BlogDetail({ params }) {
+  const [locale, setLocale] = useState('en');
+  const [id, setId] = useState('');
+  const pathname = usePathname();
+
+  // Get locale and id from params
+  useEffect(() => {
+    const getParams = async () => {
+      const resolvedParams = await params;
+      setLocale(resolvedParams?.locale || 'en');
+      setId(resolvedParams?.id || '');
+    };
+    getParams();
+  }, [params]);
+
+  // Simple translation function
+  const t = (key) => {
+    const translations = {
+      en: {
+        'blog.backToBlog': 'Back to Blog',
+        'blog.shareArticle': 'Share Article',
+        'blog.relatedArticles': 'Related Articles',
+        'blog.readMore': 'Read More'
+      },
+      zh: {
+        'blog.backToBlog': '返回博客',
+        'blog.shareArticle': '分享文章',
+        'blog.relatedArticles': '相关文章',
+        'blog.readMore': '阅读更多'
+      },
+      tr: {
+        'blog.backToBlog': 'Blog\'a Dön',
+        'blog.shareArticle': 'Makaleyi Paylaş',
+        'blog.relatedArticles': 'İlgili Makaleler',
+        'blog.readMore': 'Devamını Oku'
+      }
+    };
+    return translations[locale]?.[key] || translations.en[key] || key;
+  };
 
   const post = blogPosts[id];
 
@@ -140,13 +175,19 @@ export default async function BlogDetail({ params }) {
         <Header />
         <div className="pt-32 pb-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold text-slate-800 mb-4">文章未找到</h1>
-            <p className="text-slate-600 mb-8">您要查找的文章不存在或已被删除。</p>
+            <h1 className="text-4xl font-bold text-slate-800 mb-4">
+              {locale === 'zh' ? '文章未找到' : locale === 'tr' ? 'Makale Bulunamadı' : 'Article Not Found'}
+            </h1>
+            <p className="text-slate-600 mb-8">
+              {locale === 'zh' ? '您要查找的文章不存在或已被删除。' : 
+               locale === 'tr' ? 'Aradığınız makale mevcut değil veya silinmiş.' : 
+               'The article you are looking for does not exist or has been deleted.'}
+            </p>
             <Link 
               href={`/${locale}/blog`}
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
-              返回博客
+              {t('blog.backToBlog')}
             </Link>
           </div>
         </div>
@@ -238,7 +279,7 @@ export default async function BlogDetail({ params }) {
       {/* Related Articles */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-800 mb-8 text-center">相关文章</h2>
+          <h2 className="text-3xl font-bold text-slate-800 mb-8 text-center">{t('blog.relatedArticles')}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Object.values(blogPosts)
               .filter(p => p.id !== post.id)

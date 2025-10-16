@@ -12,12 +12,13 @@ export default function LanguageSwitcher() {
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
   ];
 
   const handleLanguageChange = (locale) => {
     // Remove current locale from pathname
     const segments = pathname.split('/');
-    if (segments[1] && ['en', 'zh'].includes(segments[1])) {
+    if (segments[1] && ['en', 'zh', 'tr'].includes(segments[1])) {
       segments.splice(1, 1);
     }
     
@@ -29,7 +30,7 @@ export default function LanguageSwitcher() {
 
   // Get current locale from pathname
   const segments = pathname.split('/');
-  const currentLocale = segments[1] && ['en', 'zh'].includes(segments[1]) ? segments[1] : 'en';
+  const currentLocale = segments[1] && ['en', 'zh', 'tr'].includes(segments[1]) ? segments[1] : 'en';
   const currentLanguage = languages.find(lang => lang.code === currentLocale);
 
   return (
