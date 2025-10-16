@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getTranslations, createTranslationFunction } from '@/lib/translations';
@@ -135,11 +136,14 @@ export default async function About({ params }) {
                 </p>
               </div>
             </div>
-            <div className="rounded-2xl h-96 overflow-hidden shadow-lg">
-              <img 
+            <div className="relative rounded-2xl h-96 overflow-hidden shadow-lg">
+              <Image 
                 src="/about-business-meeting.jpg" 
                 alt="Professional business meeting with strategic consultation"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority
               />
               {/* Overlay for better text readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
