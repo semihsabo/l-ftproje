@@ -1,13 +1,28 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getTranslations, createTranslationFunction } from '@/lib/translations';
+import { useServices } from '@/hooks/useAPI';
 
-export default async function Home({ params }) {
-  const resolvedParams = await params;
-  const { locale } = resolvedParams || { locale: 'en' };
-  const translations = await getTranslations(locale);
+export default function Home({ params }) {
+  const [locale, setLocale] = useState('en');
+  const [translations, setTranslations] = useState({});
+  const { services, loading: servicesLoading, error: servicesError } = useServices();
+
+  useEffect(() => {
+    const initTranslations = async () => {
+      const resolvedParams = await params;
+      const currentLocale = resolvedParams?.locale || 'en';
+      setLocale(currentLocale);
+      const trans = await getTranslations(currentLocale);
+      setTranslations(trans);
+    };
+    initTranslations();
+  }, [params]);
+
   const t = createTranslationFunction(translations);
 
   return (
@@ -128,6 +143,23 @@ export default async function Home({ params }) {
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Loading State */}
+          {servicesLoading && (
+            <div className="text-center py-8">
+              <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+              <p className="mt-2 text-slate-600">Loading services...</p>
+            </div>
+          )}
+          
+          {/* Error State */}
+          {servicesError && (
+            <div className="text-center py-8">
+              <p className="text-red-600">Error loading services: {servicesError}</p>
+            </div>
+          )}
+          
+          {/* Services Content */}
+          {!servicesLoading && !servicesError && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Large Card */}
             <div className="lg:col-span-2">
@@ -421,6 +453,7 @@ export default async function Home({ params }) {
               </svg>
             </button>
           </div>
+          )}
         </div>
       </section>
 
