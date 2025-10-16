@@ -57,7 +57,27 @@ export default function ServiceDetail({ params }) {
         'services.roiOptimizationDesc': 'Maximize return on investment through strategic planning',
         'services.supplierSelection': 'Supplier Selection',
         'services.supplierSelectionDesc': 'Identify and evaluate reliable suppliers and manufacturers',
-        'services.riskManagementConsulting': 'Risk Management Consulting'
+        'services.riskManagementConsulting': 'Risk Management Consulting',
+        'services.aiMachineLearning': 'AI & Machine Learning',
+        'services.aiMachineLearningDesc': 'Implement cutting-edge AI solutions for business optimization',
+        'services.blockchainSolutions': 'Blockchain Solutions',
+        'services.blockchainSolutionsDesc': 'Secure and transparent blockchain implementations',
+        'services.iotIntegration': 'IoT Integration',
+        'services.iotIntegrationDesc': 'Connect and optimize your devices and systems',
+        'services.digitalTransformation': 'Digital Transformation',
+        'services.digitalTransformationDesc': 'Complete digital overhaul of business processes',
+        'services.technologyAssessment': 'Technology Assessment',
+        'services.technologyAssessmentDesc': 'We begin with a comprehensive evaluation of your current technology infrastructure and identify areas for improvement.',
+        'services.trendAnalysis': 'Trend Analysis',
+        'services.trendAnalysisDesc': 'Our experts research and analyze emerging technologies relevant to your industry and business needs.',
+        'services.solutionDesign': 'Solution Design',
+        'services.solutionDesignDesc': 'We design customized technology solutions that align with your strategic objectives and budget constraints.',
+        'services.implementation': 'Implementation',
+        'services.implementationDesc': 'Our team provides hands-on support during the implementation phase to ensure smooth deployment.',
+        'services.optimization': 'Optimization',
+        'services.optimizationDesc': 'We continuously monitor and optimize your technology solutions for maximum performance and ROI.',
+        'testimonials.ahmetQuote': 'Their technology consulting transformed our entire digital infrastructure. The results exceeded our expectations.',
+        'testimonials.mariaQuote': 'The AI implementation they provided has increased our efficiency by 40%. Highly recommended!'
       },
       zh: {
         'services.newTrendTech': '新趋势技术',
@@ -94,7 +114,27 @@ export default function ServiceDetail({ params }) {
         'services.roiOptimizationDesc': '通过战略规划最大化投资回报',
         'services.supplierSelection': '供应商选择',
         'services.supplierSelectionDesc': '识别和评估可靠的供应商和制造商',
-        'services.riskManagementConsulting': '风险管理咨询'
+        'services.riskManagementConsulting': '风险管理咨询',
+        'services.aiMachineLearning': '人工智能与机器学习',
+        'services.aiMachineLearningDesc': '实施尖端AI解决方案以实现业务优化',
+        'services.blockchainSolutions': '区块链解决方案',
+        'services.blockchainSolutionsDesc': '安全透明的区块链实施',
+        'services.iotIntegration': '物联网集成',
+        'services.iotIntegrationDesc': '连接和优化您的设备和系统',
+        'services.digitalTransformation': '数字化转型',
+        'services.digitalTransformationDesc': '业务流程的完整数字化改造',
+        'services.technologyAssessment': '技术评估',
+        'services.technologyAssessmentDesc': '我们从全面评估您当前的技术基础设施开始，并识别改进领域。',
+        'services.trendAnalysis': '趋势分析',
+        'services.trendAnalysisDesc': '我们的专家研究和分析与您的行业和业务需求相关的新兴技术。',
+        'services.solutionDesign': '解决方案设计',
+        'services.solutionDesignDesc': '我们设计符合您战略目标和预算限制的定制技术解决方案。',
+        'services.implementation': '实施',
+        'services.implementationDesc': '我们的团队在实施阶段提供实际支持，确保顺利部署。',
+        'services.optimization': '优化',
+        'services.optimizationDesc': '我们持续监控和优化您的技术解决方案，以获得最大性能和投资回报。',
+        'testimonials.ahmetQuote': '他们的技术咨询彻底改变了我们的数字基础设施。结果超出了我们的期望。',
+        'testimonials.mariaQuote': '他们提供的AI实施将我们的效率提高了40%。强烈推荐！'
       },
       tr: {
         'services.newTrendTech': 'Yeni Trend Teknolojiler',
@@ -131,7 +171,27 @@ export default function ServiceDetail({ params }) {
         'services.roiOptimizationDesc': 'Stratejik planlama ile yatırım getirisini maksimize edin',
         'services.supplierSelection': 'Tedarikçi Seçimi',
         'services.supplierSelectionDesc': 'Güvenilir tedarikçileri ve üreticileri belirleyin ve değerlendirin',
-        'services.riskManagementConsulting': 'Risk Yönetimi Danışmanlığı'
+        'services.riskManagementConsulting': 'Risk Yönetimi Danışmanlığı',
+        'services.aiMachineLearning': 'AI & Makine Öğrenimi',
+        'services.aiMachineLearningDesc': 'İş optimizasyonu için en son teknoloji AI çözümleri uygulayın',
+        'services.blockchainSolutions': 'Blockchain Çözümleri',
+        'services.blockchainSolutionsDesc': 'Güvenli ve şeffaf blockchain uygulamaları',
+        'services.iotIntegration': 'IoT Entegrasyonu',
+        'services.iotIntegrationDesc': 'Cihazlarınızı ve sistemlerinizi bağlayın ve optimize edin',
+        'services.digitalTransformation': 'Dijital Dönüşüm',
+        'services.digitalTransformationDesc': 'İş süreçlerinin tam dijital dönüşümü',
+        'services.technologyAssessment': 'Teknoloji Değerlendirmesi',
+        'services.technologyAssessmentDesc': 'Mevcut teknoloji altyapınızın kapsamlı değerlendirmesi ile başlıyoruz ve iyileştirme alanlarını belirliyoruz.',
+        'services.trendAnalysis': 'Trend Analizi',
+        'services.trendAnalysisDesc': 'Uzmanlarımız, sektörünüz ve iş ihtiyaçlarınızla ilgili gelişen teknolojileri araştırır ve analiz eder.',
+        'services.solutionDesign': 'Çözüm Tasarımı',
+        'services.solutionDesignDesc': 'Stratejik hedefleriniz ve bütçe kısıtlarınızla uyumlu özel teknoloji çözümleri tasarlıyoruz.',
+        'services.implementation': 'Uygulama',
+        'services.implementationDesc': 'Ekibimiz, sorunsuz dağıtım sağlamak için uygulama aşamasında pratik destek sağlar.',
+        'services.optimization': 'Optimizasyon',
+        'services.optimizationDesc': 'Maksimum performans ve yatırım getirisi için teknoloji çözümlerinizi sürekli izliyor ve optimize ediyoruz.',
+        'testimonials.ahmetQuote': 'Teknoloji danışmanlıkları tüm dijital altyapımızı dönüştürdü. Sonuçlar beklentilerimizi aştı.',
+        'testimonials.mariaQuote': 'Sağladıkları AI uygulaması verimliliğimizi %40 artırdı. Kesinlikle tavsiye ederim!'
       }
     };
     return translations[locale]?.[key] || translations.en[key] || key;
@@ -213,21 +273,21 @@ export default function ServiceDetail({ params }) {
       </ul>
     `,
     features: [
-      { title: 'AI & Machine Learning', description: 'Implement cutting-edge AI solutions for business optimization' },
-      { title: 'Blockchain Solutions', description: 'Secure and transparent blockchain implementations' },
-      { title: 'IoT Integration', description: 'Connect and optimize your devices and systems' },
-      { title: 'Digital Transformation', description: 'Complete digital overhaul of business processes' }
+      { title: t('services.aiMachineLearning'), description: t('services.aiMachineLearningDesc') },
+      { title: t('services.blockchainSolutions'), description: t('services.blockchainSolutionsDesc') },
+      { title: t('services.iotIntegration'), description: t('services.iotIntegrationDesc') },
+      { title: t('services.digitalTransformation'), description: t('services.digitalTransformationDesc') }
     ],
     process: [
-      { step: 1, title: 'Technology Assessment', description: 'We begin with a comprehensive evaluation of your current technology infrastructure and identify areas for improvement.' },
-      { step: 2, title: 'Trend Analysis', description: 'Our experts research and analyze emerging technologies relevant to your industry and business needs.' },
-      { step: 3, title: 'Solution Design', description: 'We design customized technology solutions that align with your strategic objectives and budget constraints.' },
-      { step: 4, title: 'Implementation', description: 'Our team provides hands-on support during the implementation phase to ensure smooth deployment.' },
-      { step: 5, title: 'Optimization', description: 'We continuously monitor and optimize your technology solutions for maximum performance and ROI.' }
+      { step: 1, title: t('services.technologyAssessment'), description: t('services.technologyAssessmentDesc') },
+      { step: 2, title: t('services.trendAnalysis'), description: t('services.trendAnalysisDesc') },
+      { step: 3, title: t('services.solutionDesign'), description: t('services.solutionDesignDesc') },
+      { step: 4, title: t('services.implementation'), description: t('services.implementationDesc') },
+      { step: 5, title: t('services.optimization'), description: t('services.optimizationDesc') }
     ],
     testimonials: [
-      { name: 'Ahmet Yılmaz', company: 'TechCorp', quote: 'Their technology consulting transformed our entire digital infrastructure. The results exceeded our expectations.' },
-      { name: 'Maria Rodriguez', company: 'InnovateLabs', quote: 'The AI implementation they provided has increased our efficiency by 40%. Highly recommended!' }
+      { name: 'Ahmet Yılmaz', company: 'TechCorp', quote: t('testimonials.ahmetQuote') },
+      { name: 'Maria Rodriguez', company: 'InnovateLabs', quote: t('testimonials.mariaQuote') }
     ]
   },
   'machinery-equipment-investment': {
