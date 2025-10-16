@@ -1,15 +1,53 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
-import useTranslation from '@/hooks/useTranslation';
+// import useTranslation from '@/hooks/useTranslation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [locale, setLocale] = useState('en');
   const pathname = usePathname();
-  const { t } = useTranslation();
+
+  // Get locale from pathname
+  useEffect(() => {
+    const segments = pathname.split('/');
+    const currentLocale = segments[1] && ['en', 'zh', 'tr'].includes(segments[1]) ? segments[1] : 'en';
+    setLocale(currentLocale);
+  }, [pathname]);
+  
+  // Multi-language translation function
+  const t = (key) => {
+    const translations = {
+      en: {
+        'nav.home': 'Home',
+        'nav.services': 'Services',
+        'nav.about': 'About',
+        'nav.insights': 'Insights',
+        'nav.contact': 'Contact',
+        'nav.getConsultation': 'Get Consultation'
+      },
+      zh: {
+        'nav.home': '首页',
+        'nav.services': '服务项目',
+        'nav.about': '关于我们',
+        'nav.insights': '行业洞察',
+        'nav.contact': '联系我们',
+        'nav.getConsultation': '获取咨询'
+      },
+      tr: {
+        'nav.home': 'Ana Sayfa',
+        'nav.services': 'Hizmetler',
+        'nav.about': 'Hakkımızda',
+        'nav.insights': 'İçgörüler',
+        'nav.contact': 'İletişim',
+        'nav.getConsultation': 'Danışmanlık Al'
+      }
+    };
+    return translations[locale]?.[key] || translations.en[key] || key;
+  };
 
   // Get current locale from pathname
   const segments = pathname.split('/');

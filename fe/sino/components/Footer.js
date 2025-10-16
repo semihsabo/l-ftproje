@@ -2,10 +2,36 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import useTranslation from '@/hooks/useTranslation';
+// import useTranslation from '@/hooks/useTranslation';
 
 export default function Footer() {
-  const { t } = useTranslation();
+  // Simple translation function
+  const t = (key) => {
+    const translations = {
+      'footer.technologyConsulting': 'Technology Consulting',
+      'footer.investmentAdvisory': 'Investment Advisory',
+      'footer.marketAnalysis': 'Market Analysis',
+      'footer.riskManagement': 'Risk Management',
+      'footer.processOptimization': 'Process Optimization',
+      'footer.internationalTrade': 'International Trade',
+      'footer.companyName': 'SCENORIA',
+      'footer.tagline': 'Strategic Business Consulting',
+      'footer.description': 'Transforming businesses through strategic vision and innovative solutions.',
+      'footer.quickLinks': 'Quick Links',
+      'footer.services': 'Services',
+      'footer.about': 'About',
+      'footer.insights': 'Insights',
+      'footer.contact': 'Contact',
+      'footer.contactInfo': 'Contact Info',
+      'footer.email': 'Email',
+      'footer.phone': 'Phone',
+      'footer.address': 'Address',
+      'footer.copyright': '© 2024 SCENORIA. All rights reserved.',
+      'footer.privacyPolicy': 'Privacy Policy',
+      'footer.termsOfService': 'Terms of Service'
+    };
+    return translations[key] || key;
+  };
   const pathname = usePathname();
   
   // Get current locale from pathname
