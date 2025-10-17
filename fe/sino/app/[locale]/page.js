@@ -247,9 +247,7 @@ export default function Home({ params }) {
                   alt="Professional business meeting with team collaboration"
                   width={800}
                   height={500}
-                  layout="responsive"
-                  objectFit="cover"
-                  className="rounded-2xl"
+                  className="rounded-2xl object-cover"
                   priority
                 />
               </div>
@@ -587,9 +585,7 @@ export default function Home({ params }) {
                 alt="Business meeting"
                 width={800}
                 height={500}
-                layout="responsive"
-                objectFit="cover"
-                className="rounded-2xl"
+                className="rounded-2xl object-cover"
               />
             </div>
           </div>

@@ -17,8 +17,9 @@ export const metadata = {
   description: "Transform your business with our strategic consulting services. Technology, investment, and global market expertise.",
 };
 
-export default function RootLayout({ children, params }) {
-  const { locale } = params || { locale: 'en' };
+export default async function RootLayout({ children, params }) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams || { locale: 'en' };
   
   return (
     <html lang={locale}>
